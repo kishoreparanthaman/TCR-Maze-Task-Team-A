@@ -37,6 +37,10 @@ const int enA = 6; //pwm
 const int enB = 5; //pwm
 void setup() 
 {
+ DebugSerial.begin(9600);
+ DebugSerial.println("Waiting for connections...");
+ Serial.begin(9600);
+ Blynk.begin(Serial, auth);
  pinMode(trigPin1, OUTPUT);
  pinMode(echoPin1, INPUT);
  pinMode(trigPin2, OUTPUT);
