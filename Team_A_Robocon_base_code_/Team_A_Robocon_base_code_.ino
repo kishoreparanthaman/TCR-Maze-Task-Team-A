@@ -130,7 +130,7 @@ long dur;
  delayMicroseconds(10); 
  digitalWrite(trigPin1, LOW);
  dur = pulseIn(echoPin1, HIGH);
- return (dur/30);// convert the distance to centimeters.
+ return (dur/62);// convert the distance to centimeters.
 }
 
 long RightSensor () 
@@ -154,5 +154,5 @@ long dur;
  delayMicroseconds(10); 
  digitalWrite(trigPin3, LOW);
  dur = pulseIn(echoPin3, HIGH);
- return (dur/50);// convert the distance to centimeters.
+ return (dur/62);// convert the distance to centimeters.
 }
